@@ -37,7 +37,7 @@ class ModelSortableScope implements ScopeInterface {
             if ($order['column'] === $column)
             {
                 unset($query->orders[$key]);
-                $query->orders = array_values($query->orders);
+                $query->orders = array_values($query->orders) ?: null;
             }
         }
     }
