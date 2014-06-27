@@ -31,7 +31,7 @@ trait ModelSortableTrait {
      */
     public function getOrderColumn()
     {
-        return defined('static::ORDER') ? static::ORDER : 'order';
+        return defined('static::ORDER') ? static::ORDER : 'sort_order';
     }
 
 
